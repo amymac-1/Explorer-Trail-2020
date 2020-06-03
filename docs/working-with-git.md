@@ -8,7 +8,7 @@ To learn more about Git, go [here](https://git-scm.com/).
 
 We have two main branches in this repo: `master` and `develop`.
 
-`master` is the copy of the live production site and `develop` is our working branch, which should be the most current and up to date with unreleased changes. We shouldn't ever be working off the `master` branch, as all work should be funnelled to this through the `develop` branch. `develop` is our default branch, and what we work off. when you clone the repo, make sure you are on the `develop` branch to begin. All new feature and bugfix branches should be made off the `develop` branch.
+`master` is the copy of the live production site and `develop` is our working branch, which should be the most current and up to date with unreleased changes. We shouldn't ever be working off the `master` branch, as all work should be funnelled to this through the `develop` branch. `develop` is our default branch, and what we work off. When you clone the repo, make sure you are on the `develop` branch to begin. All new feature and bug-fix branches should be made off the `develop` branch.
 
 ## Navigating branches
 
@@ -40,13 +40,13 @@ These commands will only apply for the branch you are on. If you are wanting to 
 
 ## Feature branches vs Bug fix branches & branch naming
 
-Work on the project is broken up into two different types: features and bugs. A feature is defined by adding a new feature, as in adding new code, and a bug is fixing something in existing code. To differentiate between the two different types of work, we will had a prefix to our branches. All feature branches will start with `f/` and all bug fix branches will start with `b/`.
+Work on the project is broken up into two different types: features and bugs. A feature is defined by adding a new feature, as in adding new code, and a bug is fixing something in existing code. To differentiate between the two different types of work, we will add a prefix to our branches. All feature branches will start with `f/` and all bug fix branches will start with `b/`.
 
 All branches need to be named with a short summary of the work. For example, if adding a feature to add a nickname, the branch could be called `f/add-nickname`, or if fixing a bug on a form field validation the branch could be called `b/form-field-validation`. This branch naming allows everyone to see if the code is to fix or add and what the code does.
 
 ## Creating a new branch
 
-When picking up a card from the Trello board, all work relating to that card must be on it's own seperate branch. If you work on three cards in one sitting, then your work must be on three seperate branches with three seperate pull requests. This allows us to keep the repo and branches organised and make sure that the work is going into the repo in the correct order.
+When picking up a card from the Trello board, all work relating to that card must be on it's own separate branch. If you work on three cards in one sitting, then your work must be on three separate branches with three separate pull requests. This allows us to keep the repo and branches organised and make sure that the work is going into the repo in the correct order.
 
 To create a new branch, make sure you have navigated to the `develop` branch and have done a pull to update the branch.
 
@@ -108,7 +108,7 @@ When you have done a push, there will be a link to 'Create a pull request for [b
 
 The pull request should show that you are wanting to merge your branch to `base: develop` and let you know if this is able to be merged.
 
-In the text fields, it will have your latest commit message in the title but you can change this so it's a better summary of the Trello card or the work you have done, or you can just put in the branch name. In the comment field, you can put a more indepth comment of what you've done. For example, if I was created a pull request for changes to this file I could put:
+In the text fields, it will have your latest commit message in the title but you can change this so it's a better summary of the Trello card or the work you have done, or you can just put in the branch name. In the comment field, you can put a more in-depth comment of what you've done. For example, if I was created a pull request for changes to this file I could put:
 
 Title: `Updating GIT documentation`
 Comment: `Added new section for making a PR, fixed spelling mistakes.`
